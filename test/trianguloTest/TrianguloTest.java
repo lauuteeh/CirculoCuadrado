@@ -12,7 +12,7 @@ public class TrianguloTest{
 	@Test
 	public void perimetroTest() {
 		Triangulo triangulito = new Triangulo();
-		Integer resulEsperado = 16;
+		Integer resulEsperado = 12;
 		
 		Integer resulObtenido = triangulito.perimetro(4);
 		
@@ -22,9 +22,9 @@ public class TrianguloTest{
 	@Test
 	public void areaTest() {
 		Triangulo triangulito = new Triangulo();
-		Integer resulEsperado = 16;
+		Integer resulEsperado = 4;
 		
-		Integer resulObtenido = triangulito.area(4);
+		Integer resulObtenido = triangulito.area(4, 2);
 		
 		Assert.assertEquals(resulEsperado,resulObtenido);
 	}
